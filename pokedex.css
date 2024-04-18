@@ -1,0 +1,26 @@
+#pokemon_logo{
+    text-align: center;
+}
+
+
+.pokemon_title{
+    width: 500px;
+    margin: -154px;
+}
+
+*{
+    box-sizing: border-box;
+}
+#pokeImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
