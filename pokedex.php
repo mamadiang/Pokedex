@@ -23,11 +23,10 @@
                 //var_dump($appeleDeLaFunctionGetPokemon); 
 
             while($pokemon = $appeleDeLaFunctionGetPokemon->fetch()){
-            
+              
+               echo '<a href="detailsPokemon.php?id=' . $pokemon['num_poke'] . '">';
+               echo '<img src="./images/' . $pokemon['img_poke'] . '"></a>'; 
 
-            
-               
-             echo '<td><img src="./images/' . $pokemon['img_poke'] . '"></td>'; 
              echo '<td>' . $pokemon['nom'] . '</td>';
              //echo '<td>' . $pokemon['type'] . '</td>';
              echo '<td>' . $pokemon['competence'] . '</td>';

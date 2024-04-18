@@ -6,7 +6,7 @@ if (!isset($_SESSION['email'])) {
     exit;
 }
 
-    $dsn = 'mysql:host=localhost;dbname=back';
+    $dsn = 'mysql:host=localhost;dbname=pokedex';
     $user = 'root';
     $password = '';
 
