@@ -7,43 +7,49 @@
     <link rel="stylesheet" href="pokedex.css">
 </head>
 <body>
-    
-    <div id="pokemon_logo">
-        <img src="./images/16.png" alt="" class="pokemon_title">
-    </div>
+    <div id="page">
+        <div id="pokemon_logo">
+            <img src="./images/16.png" alt="" class="pokemon_title">
+        </div>
 
-    <div id="pokeImg">
+        <div id="pokeImg">
 
-        <?php
+            <?php
 
-                require 'database.php';
+                    require 'database.php';
+                    
+                    $appeleDeLaFunctionGetPokemon = Database::RecherchePokemon();
+
+                    //var_dump($appeleDeLaFunctionGetPokemon); 
+
+                while($pokemon = $appeleDeLaFunctionGetPokemon->fetch()){
                 
-                $appeleDeLaFunctionGetPokemon = Database::RecherchePokemon();
+                
+                    echo '<a href="detailsPokemon.php?id=' . $pokemon['num_poke'] . '">';
+                    echo '<div class="pokemon-container">';
+                    echo '<img src="./images/' . $pokemon['img_poke'] . '">';
+                    echo '</div>';
+                    echo '</a>';
+                    
 
-                //var_dump($appeleDeLaFunctionGetPokemon); 
-
-            while($pokemon = $appeleDeLaFunctionGetPokemon->fetch()){
-              
-               echo '<a href="detailsPokemon.php?id=' . $pokemon['num_poke'] . '">';
-               echo '<img src="./images/' . $pokemon['img_poke'] . '"></a>'; 
-
-             echo '<td>' . $pokemon['nom'] . '</td>';
-             //echo '<td>' . $pokemon['type'] . '</td>';
-             echo '<td>' . $pokemon['competence'] . '</td>';
-             echo '<td>' . $pokemon['taille'] . '</td>';
-             echo '<td>' . $pokemon['masse'] . '</td>';
-             echo '<td>' . $pokemon['attack'] . '</td>';
-             echo '<td>' . $pokemon['defence'] . '</td>';
-             echo '<td>' . $pokemon['vitesse'] . '</td>';
-             echo '<td>' . $pokemon['generation'] . '</td>';
+                echo '<td>' . $pokemon['nom'] . '</td>';
+                //echo '<td>' . $pokemon['type'] . '</td>';
+                echo '<td>' . $pokemon['competence'] . '</td>';
+                echo '<td>' . $pokemon['taille'] . '</td>';
+                echo '<td>' . $pokemon['masse'] . '</td>';
+                echo '<td>' . $pokemon['attack'] . '</td>';
+                echo '<td>' . $pokemon['defence'] . '</td>';
+                echo '<td>' . $pokemon['vitesse'] . '</td>';
+                echo '<td>' . $pokemon['generation'] . '</td>';
+                
+                }
             
-            }
-        
-        
-        
-        
-        
-        ?>
+            
+            
+            
+            
+            ?>
+        </div>
     </div>
 
 </body>
