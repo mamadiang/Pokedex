@@ -38,9 +38,9 @@ $id_pokemon = $_GET['id'];
             <img src="./images/16.png" alt="" class="pokemon_title">
         </div>
 
-        <div class="container mt-5">
+        <div class="container mt-3">
             <h2 class="mb-4">Détails Pokemon</h2>
-            <div class="card">
+            <div>
                 <div class="card-body">
             
                     <?php
@@ -60,5 +60,14 @@ $id_pokemon = $_GET['id'];
             </div>
         </div>
     </div>
+    
+    <footer id="page">
+            <div class="separator"></div>
+
+            <div id="footer-container">
+            <p>Pokedex</p> 
+            <span>©Mamad</span>
+            </div>
+        </footer>
 </body>
 </html> 

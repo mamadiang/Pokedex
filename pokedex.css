@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Mainstay;
-    src: url(./fonts/Mainstay.otf);
+    font-family: Pokemon\ Solid;
+    src: url(./fonts/Pokemon\ Solid.ttf);
 }
     
 
@@ -42,6 +42,7 @@ img:hover{
 
 .card-body{
     background-color: rgb(70, 113, 115);
+    
 }
 
 .pokemon-container {
@@ -67,8 +68,9 @@ body{
     background-color: #000080;
 }
 
-.user{
-    display: flex;
+#user{
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 h1{
@@ -76,12 +78,12 @@ h1{
 
     font-weight: bold;
     color: yellow;
-    font-family:Mainstay;
+    font-family:Pokemon\ Solid;
 }
 label{
     font-weight: bold;
     color: yellow;
-    font-family:Mainstay;
+    font-family:Pokemon\ Solid;
 }
 
 input{
@@ -90,13 +92,13 @@ input{
     padding-right: 50px;
     padding-bottom: 10px;
 
-    font-family:Mainstay;
+    font-family:Pokemon\ Solid;
 }
 
 .submit{
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .submit:hover{
@@ -104,3 +106,19 @@ input{
     cursor: pointer;
 }
 
+.separator{
+    background-color: yellow;
+    height: 5px;
+    margin-top: 50px;
+    
+}
+#footer-container{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    color: yellow;
+    font-family:Pokemon\ Solid;
+
+}

@@ -39,6 +39,15 @@
                 </div>
             </form>
         </div>
+        
+        <footer>
+            <div class="separator"></div>
+
+            <div id="footer-container">
+            <p>Pokedex</p> 
+            <span>©Mamad</span>
+            </div>
+        </footer>
 </body>
 </html>
 
