@@ -79,7 +79,7 @@ if(isset($_POST["email"] , $_POST["motdepasse"])){
             // on peut connecter notre utilisateur
             $_SESSION["email"] = $_POST["email"];
             $_SESSION["prenom"] = $resultat['prenom'];
-            header("Location: ajoutFiche.php");
+            header("Location: database.php");
         } 
 
     }
