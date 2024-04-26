@@ -9,7 +9,11 @@
 </head>
 <body>
         <div id="pokemon_logo">
-                <img src="./images/16.png" alt="" class="pokemon_title">
+
+        <a href="pokedex.php">
+            <img src="./images/16.png" alt="" class="pokemon_title">
+        </a>
+
         </div>
 
         <div class="register-container">

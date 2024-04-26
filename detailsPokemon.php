@@ -12,7 +12,7 @@ $id_pokemon = $_GET['id'];
     $connexion = new PDO($dsn, $user, $password);
 
     // requete detail pokemon
-    $sql = "SELECT * FROM pokemon WHERE num_poke = :id";
+    $sql = "SELECT * FROM pokemon WHERE num_poke =:id";
 
     $requete = $connexion->prepare($sql);
     $requete->execute(array('id'=>$id_pokemon));
@@ -35,7 +35,11 @@ $id_pokemon = $_GET['id'];
 <body>
     <div id="page">
         <div id="pokemon_logo">
+
+        <a href="pokedex.php">
             <img src="./images/16.png" alt="" class="pokemon_title">
+        </a>
+
         </div>
 
         <div class="container mt-3">

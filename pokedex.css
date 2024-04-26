@@ -3,6 +3,25 @@
     src: url(./fonts/Pokemon\ Solid.ttf);
 }
     
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes mood {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 
 #page{
     background-color: #000080;
@@ -19,6 +38,10 @@
     margin: -154px;
 }
 
+.pokemon_title {
+    animation: mood 2s ease-in-out infinite;
+}
+
 #pokeImg{
     display: flex;
     justify-content: center;
@@ -31,7 +54,6 @@ img{
 }
 
 img:hover{
-    width: 400px;
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -72,6 +94,26 @@ body{
     text-align: center;
     padding-bottom: 50px;
     padding-top: 20px;
+}
+
+.register-connect{
+    padding: 10px;
+}
+
+.register-connect :hover{
+    cursor: pointer;
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+.register-connect-color{
+    color:#000080;
+    background-color: rgb(143, 143, 15);
+    text-decoration: solid;
+}
+
+.profil{
+    animation: mood 2s ease-in-out infinite;
 }
 
 h1{
@@ -123,3 +165,41 @@ input{
     font-family:Pokemon\ Solid;
 
 }
+
+.choose:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.chooser{
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.team-png{
+    width: 50px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 100px;
+
+   
+
+
+}
+
+.team-png-post{
+    display: inline-block;
+    margin-left: 77px;
+}
+
+.team-png{
+    animation: mood 3s ease-in-out infinite;
+}
+

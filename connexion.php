@@ -16,7 +16,7 @@ session_start();
 <body>
 
     <div id="user">
-                <img src="./images/user.png" alt="" class="profil">
+                <img src="./images/run.png" alt="" class="profil">
      </div>
 
     <div class="register-container">
@@ -79,7 +79,7 @@ if(isset($_POST["email"] , $_POST["motdepasse"])){
             // on peut connecter notre utilisateur
             $_SESSION["email"] = $_POST["email"];
             $_SESSION["prenom"] = $resultat['prenom'];
-            header("Location: database.php");
+            header("Location: choixequipes.php");
         } 
 
     }

@@ -8,6 +8,18 @@
 </head>
 <body>
     <div id="page">
+        
+        <div class="register-connect">
+
+            <a href="inscription.php"> 
+                <input type="button" value="Inscription" class="register-connect-color">
+            </a>
+
+            <a href="connexion.php">
+                <input type="button" value="Connexion" class="register-connect-color">
+            </a>
+        </div>
+
         <div id="pokemon_logo">
             <img src="./images/16.png" alt="" class="pokemon_title">
         </div>
@@ -25,7 +37,7 @@
                 while($pokemon = $appeleDeLaFunctionGetPokemon->fetch()){
                 
                 
-                    echo '<a href="detailsPokemon.php?id=' . $pokemon['num_poke'] . '">';
+                    echo '<a href="detailsPokemon.php?id='. $pokemon['num_poke'] . '">';
                     echo '<div class="pokemon-container">';
                     echo '<img src="./images/' . $pokemon['img_poke'] . '">';
                     echo '</div>';
@@ -48,14 +60,14 @@
         </div>
     </div>
 
-        <footer>
-            <div class="separator"></div>
+    <footer>
+         <div class="separator"></div>
 
-            <div id="footer-container">
+        <div id="footer-container">
             <p>Pokedex</p> 
             <span>©Mamad</span>
-            </div>
-        </footer>
+        </div>
+    </footer>
 
 </body>
 </html>
